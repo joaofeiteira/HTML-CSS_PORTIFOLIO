@@ -228,7 +228,7 @@ footer {
     padding-top: 15px;
 }
 
-/* ANIMAÇÕES E RESPONSIBILIDADE */
+/* ANIMAÇÕES */
 
 .img-i{
     position: relative;
@@ -245,31 +245,5 @@ footer {
     }
     100%{
         top: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    .project {
-        margin: 10px 0;
-    }
-
-    form {
-        padding: 15px;
     }
 }
