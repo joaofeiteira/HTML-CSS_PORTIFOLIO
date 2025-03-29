@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="btn" href="index.html">Início</a></li>
+                <li><a class="btn" href="about.html">Sobre Mim</a></li>
+                <li><a class="btn" href="projects.html">Projetos</a></li>
+                <li><a class="btn" href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="title">Contato</h1>
+            <form action="mailto:248972@facens.br" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>  
+            <h1 class="title">Redes Sociais</h1>
+
+            <div class="flex"> 
+                <a class="linkCT" href="#"><img src="Archives/face.png" alt="" width="200px" height="200px"></a>
+                <a class="linkCT" href="https://github.com/joaofeiteira" target="_blank"><img src="Archives/github_logo_icon_206752.png" alt="" width="250px" height="250px"></a>
+                <a class="linkCT" href="#"><img src="Archives/insta.png" alt="" width="200px" height="200px"></a>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Meu Portfólio AC1</p>
+    </footer>
+</body>
+</html>

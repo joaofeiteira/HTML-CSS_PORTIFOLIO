@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin:  auto;
+    max-width: auto;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #2929295b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 8px #ff6347;
+}
+
+/* Cabeçalho Início */
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Cabeçalho FIM */
+
+main {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+span{
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.project a{
+    color: #ff6347;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.title{
+    color: #ff6347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6347;
+}
+
+section.i {
+    padding: 30px 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+/* ABOUT INÍCIO*/
+section.abt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img.abt{
+    width: 30rem;
+    margin: 1rem 0 0 10rem;
+    height: auto;
+    border-radius: 50px;
+}
+
+.text-ABT{
+    text-align: left;
+    margin-left: 13rem;
+}
+
+/* ABOUT FIM */
+
+/* PROJETOS INÍCIO */
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.project h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* PROJETOS FIM */
+
+/* FORM ESTILOS INÍCIO */
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ff6347;
+}
+
+/* FORM ESTILOS FIM */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+}
+
+/* ANIMAÇÕES E RESPONSIBILIDADE */
+
+.img-i{
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+.linkCT:hover{
+    transform: perspective(1000px) rotateY(30deg);
+}
+
+@keyframes float{
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .project {
+        margin: 10px 0;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
